@@ -1,5 +1,5 @@
 {
-  "name": "parallaxscroll",
+  "name": "ng2-parallaxscroll",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -8,7 +8,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build.prod": "ng build --prod --base-href \"https://tyrantwave.github.io/ng2-parallaxscroll/\" "
   },
   "private": true,
   "dependencies": {
