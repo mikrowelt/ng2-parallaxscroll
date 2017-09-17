@@ -1,20 +1,59 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!!
-  </h1>
-  <img width="300" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyNTAgMjUwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNTAgMjUwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojREQwMDMxO30NCgkuc3Qxe2ZpbGw6I0MzMDAyRjt9DQoJLnN0MntmaWxsOiNGRkZGRkY7fQ0KPC9zdHlsZT4NCjxnPg0KCTxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iMTI1LDMwIDEyNSwzMCAxMjUsMzAgMzEuOSw2My4yIDQ2LjEsMTg2LjMgMTI1LDIzMCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAJIi8+DQoJPHBvbHlnb24gY2xhc3M9InN0MSIgcG9pbnRzPSIxMjUsMzAgMTI1LDUyLjIgMTI1LDUyLjEgMTI1LDE1My40IDEyNSwxNTMuNCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAxMjUsMzAgCSIvPg0KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xMjUsNTIuMUw2Ni44LDE4Mi42aDBoMjEuN2gwbDExLjctMjkuMmg0OS40bDExLjcsMjkuMmgwaDIxLjdoMEwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMQ0KCQlMMTI1LDUyLjF6IE0xNDIsMTM1LjRIMTA4bDE3LTQwLjlMMTQyLDEzNS40eiIvPg0KPC9nPg0KPC9zdmc+DQo=">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="http://angularjs.blogspot.ca/">Angular blog</a></h2>
-  </li>
-</ul>
+<h1>Parallax Scroll Examples</h1>
 
+<h3>Config used:</h3>
+<pre>
+  <code class="language-typescript" pCode>
+    config: IParallaxScrollConfig = &#123;
+      axis: 'Y',
+      speed: -.5
+    &#125;
+  </code>
+</pre>
+
+<h3>CSS Used: </h3>
+<pre>
+  <code class="language-css" pCode>
+    .parallax-container &#123;
+      height: 200px;
+      width: 1000px;
+      max-width: 100%;
+    &#125;
+  
+    .parallax-directive &#123;
+      background-image: url("/assets/background.JPG");
+      height: 200px;
+      width: 1000px;
+      max-width: 100%;
+    &#125;
+  </code>
+</pre>
+<h2>As a component: </h2>
+<pre>
+  <code class="language-markup" pCode>
+    &lt;ng-parallax [config]="config" img="../assets/background.JPG" class="parallax-container"&gt;&lt;/ng-parallax&gt;
+  </code>
+</pre>
+<ng-parallax [config]="config" img="../assets/background.JPG" class="parallax-container"></ng-parallax>
+
+<p>...</p>
+<p>...</p>
+<p>...</p>
+<p>...</p>
+<h2>As a directive: </h2>
+<pre>
+  <code class="language-markup" pCode>
+    &lt;div parallax [config]="config" class="parallax-directive"&gt;&lt;/div&gt;
+  </code>
+</pre>
+<div parallax [config]="config" class="parallax-directive"></div>
+
+<p>...</p>
+<p>...</p>
+<p>...</p>
+<p>...</p>
+<p>...</p>
+<p>...</p>
+<p>...</p>
+<p>...</p>
+<p>...</p>
+<p>...</p>
